@@ -6,8 +6,8 @@
     "visualClassName": "Visual",
     "version": "1.0.0",
     "description": "Shows a simple image.",
-    "supportUrl": "https://github.com/vincefaigt/pbi-image/issues",
-    "gitHubUrl": "https://github.com/vincefaigt/pbi-image"
+    "supportUrl": "https://github.com/vincefaigt/pbi-simpleimage/issues",
+    "gitHubUrl": "https://github.com/vincefaigt/pbi-simpleimage"
   },
   "apiVersion": "1.13.0",
   "author": {
