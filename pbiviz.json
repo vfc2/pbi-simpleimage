@@ -1,0 +1,27 @@
+{
+  "visual": {
+    "name": "simpleImage",
+    "displayName": "Simple Image",
+    "guid": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "Shows a simple image.",
+    "supportUrl": "https://github.com/vincefaigt/pbi-image/issues",
+    "gitHubUrl": "https://github.com/vincefaigt/pbi-image"
+  },
+  "apiVersion": "1.13.0",
+  "author": {
+    "name": "Vincent Faigt",
+    "email": "vincent.faigt@outlook.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

@@ -1,0 +1,17 @@
+.visual-simpleImageEBC4593F96F1425FB3D84C5BF02B5075_DEBUG p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+}
+.visual-simpleImageEBC4593F96F1425FB3D84C5BF02B5075_DEBUG img {
+  display: block;
+}
+.visual-simpleImageEBC4593F96F1425FB3D84C5BF02B5075_DEBUG img.alignCenter {
+  margin: 0 auto;
+}
+.visual-simpleImageEBC4593F96F1425FB3D84C5BF02B5075_DEBUG img.alignRight {
+  float: right;
+}
