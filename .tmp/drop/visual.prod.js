@@ -628,8 +628,11 @@ var powerbi;
                     Visual.prototype.update = function (options) {
                         var _this = this;
                         var isLoaded = true;
-                        var imageURL = options.dataViews[0].tree.root.children[0].values[0].value.toString();
+                        var imageURL = null;
                         var altText = "";
+                        if (options.dataViews[0].tree.root.children[0].values[0].value) {
+                            imageURL = options.dataViews[0].tree.root.children[0].values[0].value.toString();
+                        }
                         this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
                         /* Check if the Alt Text value was provided. */
                         if (options.dataViews[0].tree.root.children[0].values[1]) {

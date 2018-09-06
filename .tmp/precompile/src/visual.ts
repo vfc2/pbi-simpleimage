@@ -46,8 +46,12 @@ module powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 
 
         public update(options: VisualUpdateOptions) {
             let isLoaded: boolean = true;
-            let imageURL: string = options.dataViews[0].tree.root.children[0].values[0].value.toString();
+            let imageURL: string | null = null;
             let altText: string = "";
+
+            if (options.dataViews[0].tree.root.children[0].values[0].value) {
+                imageURL = options.dataViews[0].tree.root.children[0].values[0].value.toString();
+            }
 
             this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
 
