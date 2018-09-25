@@ -1,6 +1,6 @@
 module powerbi.visuals.plugins {
-    export var simpleImageEBC4593F96F1425FB3D84C5BF02B5075_DEBUG = {
-        name: 'simpleImageEBC4593F96F1425FB3D84C5BF02B5075_DEBUG',
+    export var simpleImageEBC4593F96F1425FB3D84C5BF02B5075 = {
+        name: 'simpleImageEBC4593F96F1425FB3D84C5BF02B5075',
         displayName: 'Simple Image',
         class: 'Visual',
         version: '1.0.0',
