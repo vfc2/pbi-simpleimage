@@ -114,6 +114,18 @@ module powerbi.extensibility.visual {
                     this.imgElement.className = "alignRight";
                     break;
                 }
+                case "mleft": {
+                    this.imgElement.className = "alignMiddleLeft";
+                    break;
+                }
+                case "mcenter": {
+                    this.imgElement.className = "alignMiddleCenter";
+                    break;
+                }
+                case "mright": {
+                    this.imgElement.className = "alignMiddleRight";
+                    break;
+                }
             }
 
             /* Styling of the image element. */

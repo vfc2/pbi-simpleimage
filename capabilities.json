@@ -40,16 +40,28 @@
                     "type": {
                         "enumeration": [
                             {
-                                "displayName": "Left",
+                                "displayName": "Top Left",
                                 "value": "left"
                             },
                             {
-                                "displayName": "Center",
+                                "displayName": "Top Center",
                                 "value": "center"
                             },
                             {
-                                "displayName": "Right",
+                                "displayName": "Top Right",
                                 "value": "right"
+                            },
+                            {
+                                "displayName": "Middle Left",
+                                "value": "mleft"
+                            },
+                            {
+                                "displayName": "Middle Center",
+                                "value": "mcenter"
+                            },
+                            {
+                                "displayName": "Middle Right",
+                                "value": "mright"
                             }
                         ]
                     }

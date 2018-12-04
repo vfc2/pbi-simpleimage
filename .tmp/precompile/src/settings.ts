@@ -24,7 +24,7 @@
  *  THE SOFTWARE.
  */
 
-module powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075  {
+module powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076  {
     "use strict";
     import DataViewObjectsParser = powerbi.extensibility.utils.dataview.DataViewObjectsParser;
 

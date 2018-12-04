@@ -24,7 +24,7 @@
  *  THE SOFTWARE.
  */
 
-module powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075  {
+module powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076  {
     "use strict";
     export class Visual implements IVisual {
         private target: HTMLElement;
@@ -112,6 +112,18 @@ module powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 
                 }
                 case "right": {
                     this.imgElement.className = "alignRight";
+                    break;
+                }
+                case "mleft": {
+                    this.imgElement.className = "alignMiddleLeft";
+                    break;
+                }
+                case "mcenter": {
+                    this.imgElement.className = "alignMiddleCenter";
+                    break;
+                }
+                case "mright": {
+                    this.imgElement.className = "alignMiddleRight";
                     break;
                 }
             }

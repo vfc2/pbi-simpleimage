@@ -1,8 +1,8 @@
 p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // margin: 0;
     width: 100%;
     z-index: 10;
 }
@@ -17,4 +17,25 @@ img.alignCenter {
 
 img.alignRight {
     float: right;
+}
+
+img.alignMiddleLeft {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+}
+
+img.alignMiddleCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.alignMiddleRight {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
 }

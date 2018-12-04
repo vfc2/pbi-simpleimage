@@ -542,8 +542,8 @@ var powerbi;
     (function (extensibility) {
         var visual;
         (function (visual) {
-            var simpleImageEBC4593F96F1425FB3D84C5BF02B5075;
-            (function (simpleImageEBC4593F96F1425FB3D84C5BF02B5075) {
+            var simpleImageEBC4593F96F1425FB3D84C5BF02B5076;
+            (function (simpleImageEBC4593F96F1425FB3D84C5BF02B5076) {
                 "use strict";
                 var DataViewObjectsParser = powerbi.extensibility.utils.dataview.DataViewObjectsParser;
                 var VisualSettings = (function (_super) {
@@ -556,7 +556,7 @@ var powerbi;
                     }
                     return VisualSettings;
                 }(DataViewObjectsParser));
-                simpleImageEBC4593F96F1425FB3D84C5BF02B5075.VisualSettings = VisualSettings;
+                simpleImageEBC4593F96F1425FB3D84C5BF02B5076.VisualSettings = VisualSettings;
                 var ImageSettings = (function () {
                     function ImageSettings() {
                         this.scalingMode = "normal";
@@ -564,7 +564,7 @@ var powerbi;
                     }
                     return ImageSettings;
                 }());
-                simpleImageEBC4593F96F1425FB3D84C5BF02B5075.ImageSettings = ImageSettings;
+                simpleImageEBC4593F96F1425FB3D84C5BF02B5076.ImageSettings = ImageSettings;
                 var AltTextSettings = (function () {
                     function AltTextSettings() {
                         this.show = true;
@@ -576,8 +576,8 @@ var powerbi;
                     }
                     return AltTextSettings;
                 }());
-                simpleImageEBC4593F96F1425FB3D84C5BF02B5075.AltTextSettings = AltTextSettings;
-            })(simpleImageEBC4593F96F1425FB3D84C5BF02B5075 = visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 || (visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 = {}));
+                simpleImageEBC4593F96F1425FB3D84C5BF02B5076.AltTextSettings = AltTextSettings;
+            })(simpleImageEBC4593F96F1425FB3D84C5BF02B5076 = visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076 || (visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076 = {}));
         })(visual = extensibility.visual || (extensibility.visual = {}));
     })(extensibility = powerbi.extensibility || (powerbi.extensibility = {}));
 })(powerbi || (powerbi = {}));
@@ -612,8 +612,8 @@ var powerbi;
     (function (extensibility) {
         var visual;
         (function (visual) {
-            var simpleImageEBC4593F96F1425FB3D84C5BF02B5075;
-            (function (simpleImageEBC4593F96F1425FB3D84C5BF02B5075) {
+            var simpleImageEBC4593F96F1425FB3D84C5BF02B5076;
+            (function (simpleImageEBC4593F96F1425FB3D84C5BF02B5076) {
                 "use strict";
                 var Visual = (function () {
                     function Visual(options) {
@@ -681,6 +681,18 @@ var powerbi;
                                 this.imgElement.className = "alignRight";
                                 break;
                             }
+                            case "mleft": {
+                                this.imgElement.className = "alignMiddleLeft";
+                                break;
+                            }
+                            case "mcenter": {
+                                this.imgElement.className = "alignMiddleCenter";
+                                break;
+                            }
+                            case "mright": {
+                                this.imgElement.className = "alignMiddleRight";
+                                break;
+                            }
                         }
                         /* Styling of the image element. */
                         this.altTextElement.style.fontFamily = this.settings.altTextSettings.fontFamily;
@@ -690,7 +702,7 @@ var powerbi;
                         this.altTextElement.style.textAlign = this.settings.altTextSettings.textAlign;
                     };
                     Visual.parseSettings = function (dataView) {
-                        return simpleImageEBC4593F96F1425FB3D84C5BF02B5075.VisualSettings.parse(dataView);
+                        return simpleImageEBC4593F96F1425FB3D84C5BF02B5076.VisualSettings.parse(dataView);
                     };
                     /**
                      * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
@@ -698,12 +710,12 @@ var powerbi;
                      *
                      */
                     Visual.prototype.enumerateObjectInstances = function (options) {
-                        return simpleImageEBC4593F96F1425FB3D84C5BF02B5075.VisualSettings.enumerateObjectInstances(this.settings || simpleImageEBC4593F96F1425FB3D84C5BF02B5075.VisualSettings.getDefault(), options);
+                        return simpleImageEBC4593F96F1425FB3D84C5BF02B5076.VisualSettings.enumerateObjectInstances(this.settings || simpleImageEBC4593F96F1425FB3D84C5BF02B5076.VisualSettings.getDefault(), options);
                     };
                     return Visual;
                 }());
-                simpleImageEBC4593F96F1425FB3D84C5BF02B5075.Visual = Visual;
-            })(simpleImageEBC4593F96F1425FB3D84C5BF02B5075 = visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 || (visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 = {}));
+                simpleImageEBC4593F96F1425FB3D84C5BF02B5076.Visual = Visual;
+            })(simpleImageEBC4593F96F1425FB3D84C5BF02B5076 = visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076 || (visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076 = {}));
         })(visual = extensibility.visual || (extensibility.visual = {}));
     })(extensibility = powerbi.extensibility || (powerbi.extensibility = {}));
 })(powerbi || (powerbi = {}));
@@ -713,13 +725,13 @@ var powerbi;
     (function (visuals) {
         var plugins;
         (function (plugins) {
-            plugins.simpleImageEBC4593F96F1425FB3D84C5BF02B5075 = {
-                name: 'simpleImageEBC4593F96F1425FB3D84C5BF02B5075',
+            plugins.simpleImageEBC4593F96F1425FB3D84C5BF02B5076 = {
+                name: 'simpleImageEBC4593F96F1425FB3D84C5BF02B5076',
                 displayName: 'Simple Image',
                 class: 'Visual',
-                version: '1.0.1',
+                version: '1.0.2',
                 apiVersion: '1.13.0',
-                create: function (options) { return new powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5075.Visual(options); },
+                create: function (options) { return new powerbi.extensibility.visual.simpleImageEBC4593F96F1425FB3D84C5BF02B5076.Visual(options); },
                 custom: true
             };
         })(plugins = visuals.plugins || (visuals.plugins = {}));
