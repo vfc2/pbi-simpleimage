@@ -49,6 +49,8 @@ module powerbi.extensibility.visual {
             let imageURL: string | null = null;
             let altText: string = "";
 
+            this.imgElement.src = "";
+
             if (options.dataViews[0].tree.root.children[0].values[0].value) {
                 imageURL = options.dataViews[0].tree.root.children[0].values[0].value.toString();
             }
