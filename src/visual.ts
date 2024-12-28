@@ -37,9 +37,9 @@ import IVisualEventService = powerbi.extensibility.IVisualEventService;
 import { VisualFormattingSettingsModel } from "./settings";
 
 enum ScalingMode {
-    Normal = "Normal",
-    Fit = "Fit",
-    None = "None"
+    Normal = "normal",
+    Fit = "fit",
+    None = "none"
 }
 
 enum VerticalAlignment {

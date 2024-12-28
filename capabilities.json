@@ -22,15 +22,15 @@
                         "enumeration": [
                             {
                                 "displayName": "Normal",
-                                "value": "Normal"
+                                "value": "normal"
                             },
                             {
                                 "displayName": "Fit",
-                                "value": "Fit"
+                                "value": "fit"
                             },
                             {
                                 "displayName": "None",
-                                "value": "None"
+                                "value": "none"
                             }
                         ]
                     }

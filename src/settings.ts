@@ -40,7 +40,7 @@ class ImageSettingsCardSettings extends FormattingSettingsCard {
     scalingMode = new formattingSettings.AutoDropdown({
         name: "scalingMode",
         displayName: "Scaling mode",
-        value: "Normal"
+        value: "normal"
     });
 
     imageAlignment = new formattingSettings.AutoDropdown({
