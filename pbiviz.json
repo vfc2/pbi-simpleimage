@@ -1,0 +1,26 @@
+{
+    "visual": {
+        "name": "simpleImage",
+        "displayName": "Simple Image",
+        "guid": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075",
+        "visualClassName": "Visual",
+        "version": "2.0.0.0",
+        "description": "Shows a simple image.",
+        "supportUrl": "https://nextanalytics.co.uk/simple-image",
+        "gitHubUrl": "https://github.com/vincefaigt/pbi-simpleimage"
+    },
+    "apiVersion": "5.3.0",
+    "author": {
+        "name": "Vincent Faigt",
+        "email": "vincent.faigt@outlook.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [],
+    "version": "1.0.0.0"
+}

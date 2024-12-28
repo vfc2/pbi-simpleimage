@@ -1,0 +1,191 @@
+{
+    "suppressDefaultTitle": true,
+    "dataRoles": [
+        {
+            "displayName": "Image URL",
+            "name": "imageURL",
+            "kind": "Measure",
+            "description": "The image URL or its base64 representation"
+        },
+        {
+            "displayName": "Alt Text",
+            "name": "altText",
+            "kind": "Measure",
+            "description": "An alternative text to display if the image cannot be loaded"
+        }
+    ],
+    "objects": {
+        "imageSettings": {
+            "properties": {
+                "scalingMode": {
+                    "type": {
+                        "enumeration": [
+                            {
+                                "displayName": "Normal",
+                                "value": "Normal"
+                            },
+                            {
+                                "displayName": "Fit",
+                                "value": "Fit"
+                            },
+                            {
+                                "displayName": "None",
+                                "value": "None"
+                            }
+                        ]
+                    }
+                },
+                "imageAlignment": {
+                    "type": {
+                        "enumeration": [
+                            {
+                                "displayName": "Top Left",
+                                "value": "left"
+                            },
+                            {
+                                "displayName": "Top Center",
+                                "value": "center"
+                            },
+                            {
+                                "displayName": "Top Right",
+                                "value": "right"
+                            },
+                            {
+                                "displayName": "Middle Left",
+                                "value": "mleft"
+                            },
+                            {
+                                "displayName": "Middle Center",
+                                "value": "mcenter"
+                            },
+                            {
+                                "displayName": "Middle Right",
+                                "value": "mright"
+                            },
+                            {
+                                "displayName": "Bottom Left",
+                                "value": "bleft"
+                            },
+                            {
+                                "displayName": "Bottom Center",
+                                "value": "bcenter"
+                            },
+                            {
+                                "displayName": "Bottom Right",
+                                "value": "bright"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "altTextSettings": {
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "fontSize": {
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontBold": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontUnderline": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontItalic": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "textHorizontalAlign": {
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
+                },
+                "textVerticalAlign": {
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "imageURL": {
+                        "min": 0,
+                        "max": 1
+                    },
+                    "altText": {
+                        "min": 0,
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "imageURL"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "imageURL"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "altText"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true,
+            "parameters": [
+                "http://*",
+                "https://*"
+            ]
+        }
+    ]
+}
