@@ -6,8 +6,8 @@
         "visualClassName": "Visual",
         "version": "2.0.0.0",
         "description": "Shows a simple image.",
-        "supportUrl": "https://nextanalytics.co.uk/simple-image",
-        "gitHubUrl": "https://github.com/vincefaigt/pbi-simpleimage"
+        "supportUrl": "https://vfco.uk/simple-image",
+        "gitHubUrl": "https://github.com/vfc2/pbi-simpleimage"
     },
     "apiVersion": "5.3.0",
     "author": {
